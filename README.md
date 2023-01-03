@@ -23,6 +23,11 @@ nest g service iam/authentication
 nest g class iam/authentication/dto/sign-in.dto --no-spec
 nest g class iam/authentication/dto/sign-up.dto --no-spec
 ```
+
+## Protecting routes with a Guard
+```
+nest g guard iam/authentication/guards/access-token
+```
 ## Installation
 
 ```bash
