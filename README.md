@@ -28,6 +28,11 @@ nest g class iam/authentication/dto/sign-up.dto --no-spec
 ```
 nest g guard iam/authentication/guards/access-token
 ```
+
+## Adding Public Routes
+```
+nest g guard iam/authentication/guards/authentication
+```
 ## Installation
 
 ```bash
