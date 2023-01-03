@@ -16,6 +16,13 @@ nest g service iam/hashing
 nest g service iam/hashing/bcrypt --flat
 ```
 
+## Sign-in and Sign-up routes
+```
+nest g controller iam/authentication
+nest g service iam/authentication
+nest g class iam/authentication/dto/sign-in.dto --no-spec
+nest g class iam/authentication/dto/sign-up.dto --no-spec
+```
 ## Installation
 
 ```bash
