@@ -33,6 +33,11 @@ nest g guard iam/authentication/guards/access-token
 ```
 nest g guard iam/authentication/guards/authentication
 ```
+
+## Invalidating Tokens
+```
+nest g class iam/authentication/refresh-token-ids.storage
+```
 ## Installation
 
 ```bash
