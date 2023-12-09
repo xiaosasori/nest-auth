@@ -1,4 +1,5 @@
 import { Role } from 'src/users/enums/role.enum';
+import { PermissionType } from '../authorization/permission.type';
 
 export interface ActiveUserData {
   /**
@@ -17,4 +18,11 @@ export interface ActiveUserData {
    * The subject's (user) role
    */
   role: Role;
+
+  /**
+   * Using this approach in combination with the "role-based" approach
+   * does not make sens. We have those two propperties here ("role" and "permissions")
+   * just to showcase two alternative approaches.
+   */
+  permissions: PermissionType[];
 }
