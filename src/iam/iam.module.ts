@@ -13,6 +13,8 @@ import { AccessTokenGuard } from './authentication/guards/access-token/access-to
 import { AuthenticationGuard } from './authentication/guards/authentication/authentication.guard';
 import { RefreshTokenIdsStorage } from './authentication/refresh-token-ids.storage/refresh-token-ids.storage';
 import { RolesGuard } from './authorization/guards/roles/roles.guard';
+import { GoogleAuthenticationService } from './authentication/social/google-authentication.service';
+import { GoogleAuthenticationController } from './authentication/social/google-authentication.controller';
 
 @Module({
   imports: [
@@ -36,7 +38,8 @@ import { RolesGuard } from './authorization/guards/roles/roles.guard';
     AccessTokenGuard,
     RefreshTokenIdsStorage,
     AuthenticationService,
+    GoogleAuthenticationService,
   ],
-  controllers: [AuthenticationController],
+  controllers: [AuthenticationController, GoogleAuthenticationController],
 })
 export class IamModule {}
